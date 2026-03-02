@@ -3,6 +3,7 @@ import { AppLayout } from "./components/layout/AppLayout";
 import { SurveyDashboard } from "./pages/SurveyDashboard";
 import { ServiceDashboard } from "./pages/ServiceDashboard";
 import { GenericPage } from "./pages/GenericPage";
+import { RunListPage } from "./pages/survey/runs/RunListPage";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           />
           <Route
             path="runs"
-            element={<GenericPage title="Runs" description="View and analyze survey runs" />}
+            element={<RunListPage />}
           />
           <Route
             path="wells"
